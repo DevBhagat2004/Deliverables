@@ -5,7 +5,7 @@ public class ChatHistory extends BaseTest {
     public static void main(String[] args) throws InterruptedException {
         setup();
 
-        // 🛠️ Replace with button ID for chat history
+        //  Replace with button ID for chat history
         driver.findElement(AppiumBy.id("com.example.app:id/btn_chat_history")).click();
         Thread.sleep(2000);
 
@@ -15,7 +15,7 @@ public class ChatHistory extends BaseTest {
             put("percent", 0.75);
         }});
 
-        // 🛠️ Replace with sample message text from earlier in the chat
+        //  Replace with sample message text from earlier in the chat
         boolean historyVisible = driver.findElement(AppiumBy
             .xpath("//android.widget.TextView[contains(@text, 'Old Message')]")).isDisplayed();
 
